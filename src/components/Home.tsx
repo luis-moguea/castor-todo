@@ -25,10 +25,14 @@ interface Todo {
   text: string;
 }
 
+// Home component structure
+
 const Home = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [inputTitle, setInputTitle] = useState("");
   const [inputDescription, setInputDescription] = useState("");
+
+  //create todo function
 
   const createTodo = async (e: FormEvent) => {
     e.preventDefault();

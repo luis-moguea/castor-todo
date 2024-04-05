@@ -12,6 +12,8 @@ interface Props {
   onClick: () => void;
 }
 
+// todo structure
+
 const Todo = ({
   onClick,
   id,
@@ -21,6 +23,8 @@ const Todo = ({
   completed,
   onChange,
 }: Props) => {
+  //  format firebase timestamp default date format to convert into a js readable date
+
   const formattedDate = date ? date.toDate().toLocaleString() : "";
 
   return (

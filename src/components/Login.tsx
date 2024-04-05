@@ -8,15 +8,21 @@ interface User {
   user: string;
 }
 
+//link style - passing it this way since it didnt work in the Link tag itself
+
 const style = {
   color: "blue",
   fontSize: "12px",
   textDecoration: "underline",
 };
 
+// login component
+
 const Login = ({ user }: User) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  // Log in function
 
   const handleLogIn = () => {
     if (!email || !password) {
@@ -32,6 +38,8 @@ const Login = ({ user }: User) => {
         throw new Error(error);
       });
   };
+
+  // user conditional
 
   if (user) {
     return <Navigate to="/" />;
