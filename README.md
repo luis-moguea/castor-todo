@@ -2,7 +2,7 @@
 
 ## Description
 
-This app allows users reading, creating and deleting to-dos by signing up the app, also this app will allw the user update the state of a given todo.
+This app allows users reading, creating and deleting to-dos by signing up the app, also this app will allow the user updating the state of a given todo.
 
 ## Features
 
